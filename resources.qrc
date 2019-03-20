@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/rsc">
+        <file>rsc/logo.jpeg</file>
+    </qresource>
+</RCC>
