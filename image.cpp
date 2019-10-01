@@ -90,17 +90,6 @@ void Image::set_final_pixmap(const cv::Mat& image)
 void Image::image_adjustment(int height, int width, int pos_x, int pos_y,
                              float red_proportion, float green_proportion, float blue_proportion)
 {
-//    // bulunduğu noktaya göre en büyük rakamın seçilmesine müsaade et sadece
-//    // eğer hata olacaksa çökmemesi için kendin en büyük rakama müsaade et
-//    if ((height + pos_y) > this->height) {
-//        pos_y = height + pos_y - this->height;
-//    }
-
-//    if ((width + pos_x) > this->width) {
-//        pos_x = width + pos_x - this->width;
-//    }
-//    //
-
     cv::Mat temp_blurry_image = blurry_image.clone();
     cv::Mat temp_original_image = original_image.clone();
 
